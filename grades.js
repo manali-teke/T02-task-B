@@ -93,7 +93,7 @@ form.addEventListener("submit", (event) => {
   showErrors(errors);
 
   if (Object.keys(errors).length > 0) {
-    statusEl.textContent = "Please fix the highlighted fields.";
+    statusEl.textContent = "Please fix the highlighted fields."; //according to R6, the errors need to show next to the required fields
     form.reset();
     return;
   }
